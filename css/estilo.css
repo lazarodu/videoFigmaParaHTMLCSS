@@ -84,22 +84,6 @@ main > section.main {
   margin: 0 0.4rem 0 0;
 }
 
-@media (max-width: 1010px) {
-  main > section.main {
-    grid-template-columns: auto auto auto;
-  }
-}
-@media (max-width: 760px) {
-  main > section.main {
-    grid-template-columns: auto auto;
-  }
-}
-@media (max-width: 500px) {
-  main > section.main {
-    grid-template-columns: auto;
-  }
-}
-
 /* Specific Login */
 main > section.auth {
   height: 60vh;
@@ -150,4 +134,18 @@ main > section.auth > form > p > button {
   border-radius: 0.6rem;
   width: 5rem;
   margin-left: 0.5rem;
+}
+/* Tabela */
+main > table,
+main > table tr td,
+main > table tr th {
+  border: 1px solid var(--black);
+  border-collapse: collapse;
+  padding: 1rem;
+}
+main > table tr th {
+  text-align: center;
+}
+main > table caption {
+  caption-side: bottom;
 }
